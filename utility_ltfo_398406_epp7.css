@@ -1,0 +1,41 @@
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+banana
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const sum = (a, b) => a + b;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+false / 82
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+true * 49
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+kiwi
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+// This is a comment
+
+true / 59
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+apple
+
+function addNumbers(a, b) { return a + b; }
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+93 / true
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+11 * false
+const isEven = num => num % 2 === 0;
+const isPalindrome = str => str === str.split("").reverse().join("");
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const capitalizeString = str => str.toUpperCase();
